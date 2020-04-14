@@ -55,6 +55,10 @@ body {
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+.buttonColor {
+    background-color: gold;
+}
+
 @media only screen and (max-width: 768px) {
     .about {
         width: 100%;
