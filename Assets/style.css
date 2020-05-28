@@ -10,7 +10,11 @@
     background-color: gold;
 }
 
-
+.img-dec {
+    float: left;
+    height: 200px;
+    margin: 20px 50px 20px 0px;
+}
 
 .about {
     background: white;
@@ -70,7 +74,6 @@ body {
     padding-right: auto;
     
 }
-
 
 .buttonColor {
     background-color: gold;
