@@ -1,3 +1,4 @@
-# portfolioPage
+# Portfolio Page
 
-This is Jacob Thompson's portfolio website. It contains 3 html files and an assets folder containing images and a css stylesheet. Bootstrap was used to create the site.
+Examples of my work can be accessed here, as well as contact information and my resume.
+
