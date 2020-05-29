@@ -2,8 +2,26 @@
     box-sizing: border-box;
 }
 
+body {
+    height: auto;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("midCenturyBuild.jpg");
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 60px;
+}
+
 .page-header {
     background-color: rgb(131, 131, 131);
+}
+
+#header-line {
+    box-shadow: 0 2px 4px grey;
+}
+
+#footer-line {
+    box-shadow: 0 -2px 4px grey;
 }
 
 .header-line {
@@ -14,6 +32,39 @@
     float: left;
     height: 200px;
     margin: 20px 50px 20px 0px;
+}
+
+.contain {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: gold;
+}
+
+.contain:hover .overlay {
+    opacity: 1;
+}
+
+.text {
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
 }
 
 .about {
@@ -31,22 +82,8 @@
     font-size: 20px;
 }
 
-.flex-container {
-    display: flex;
-}
-
 .fill-width {
     flex: 1;
-}
-
-body {
-    height: auto;
-    width: 100%;
-    margin-bottom: 25px;
-    background-image: url("midCenturyBuild.jpg");
-    background-size: cover;
-    background-position: center;
-    padding-bottom: 60px;
 }
 
 .footer-line {
@@ -66,7 +103,7 @@ body {
     right: 0;
     margin-left: auto;
     margin-right: auto;
-    width: 200px;
+    width: 95%;
     height: 13%;
     background-color: rgb(131, 131, 131);
     color: white;
