@@ -29,7 +29,6 @@ footer {
     position: absolute;
     bottom: 0;
     width: 100%;
-    
     clear: both;
 }
 
@@ -73,6 +72,7 @@ li {
     border-width: 1px;
     border-color: rgb(131, 131, 131);
     font-family: 'Roboto Slab', serif;
+    box-shadow: 2px 2px 4px grey;
 }
 
 .h1 {
@@ -221,6 +221,8 @@ Portfolio Styling
     width: auto;
     height: auto;
     padding: auto;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 10px;
 }
 
 .img-style {
