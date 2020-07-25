@@ -1,133 +1,209 @@
 <!DOCTYPE html>
 <html lang="en-us">
     <head>
-
-        <meta charset="UTF-8" />
+        <!-- Meta -->
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         
+        <!-- CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-        <link rel="stylesheet" type="text/css" href="Assets/style.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+		<link href="Assets/css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+        
+        <!-- Font Awesome -->
         <script src="https://kit.fontawesome.com/616f60f3ca.js"></script>
+        
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         
         <title>Portfolio Page</title>
 
     </head>
     <body>
-
+        <!-- All Pages -->
         <header class="page-header">
-
-            <nav class="navbar navbar-expand-lg navbar-dark bg">
-
+            <nav id="nav" class="navbar navbar-expand-lg navbar-dark bg" role="navigation">
+                <!-- Name -->
                 <span class="navbar-brand mb-0 h1">Jacob Thompson</span>
-
+                <!-- Menu -->
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-              
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <nav class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="index.html">About</a>
+                            <a class="nav-link button-home" href="#" data-toggle="collapse" data-target=".navbar-collapse.show"><i class="fa fa-home" aria-hidden="true"></i> Home</a> 
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="portfolio.html">Examples</a>
+                            <a class="nav-link button-portfolio" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact</a>
+                            <a class="nav-link button-contact" href="#" data-toggle="collapse" data-target=".navbar-collapse.show">Contact</a>
                         </li>
                     </ul>
-                </div>
-                
+                </nav>
             </nav>
             <div id="header-line" class="header-line py-1 mb-4"></div>
-            
         </header>
 
-        <main class="container">
-            <section class="row justify-content-center">
+        <!-- Home Page -->
+        <main id="home-page" class="container">
+            <br><br>
+                <section class="row justify-content-center">
+                    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 about bounce-left mb-5">
+                        <img src="Assets/img/profMe.jpg" class="rounded-circle img-fluid img-dec" alt="Professional Photo">
+                        <div class="dropdown-divider"></div>
+                        <p class="text-center">
+                            GIS Analyst studying to be a full-stack web developer.
+                        </p>
+                        <p class="text-center">
+                            My current work focuses on data analysis, programming and cartography. I utilize
+                            mapping software to analyze location-based data and design digital maps with geographic
+                            data and various other data sets.
+                        </p>
+                        <p class="text-center">
+                            Please feel free to contact me with any questions or for further information.
+                        </p>
+                        <p class="text-center">
+                            Click <a href="Assets/WebResume.pdf">here</a> to view my resume!
+                        </p>
+                    </div>
+                </section>
+            <br><br>
+        </main>
 
-                <div class="col-xl-7 col-lg-8 col-md-10 col-sm-10 about">
-
-                    <section class="row mt-3">
-                        <div class="col-lg-12">
-                            <p class="text-center">
-                                These are simple examples of my work utilizing HTML, CSS, 
-                                Javascript, and APIs
-                            </p>
-                        </div>
-                    </section>
-
-                    <section class="row">
-                        <div class="w-100 mx-3 mb-2"><hr></div>
-                    </section>
-
-                    <section class="container">
+        <!-- Portfolio Page -->
+        <main id="portfolio-page" class="container">
+            <br><br>
+                <section class="row justify-content-center">
+                    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 mb-4">
                         <section class="row justify-content-center">
-                            <div class="col-12 mb-4 mx-auto text-center contain">
-
+                            <div class="col about mb-4">
+                                <p class="text-center mt-3">
+                                    These are simple examples of my work utilizing HTML, CSS, 
+                                    Javascript, and APIs
+                                </p>
+                            </div>
+                        </section>
+                        <section class="row justify-content-center">
+                            <div class="col contain about-portfolio bounce-left mb-2 px-0">
+                                <a href="https://mysterious-refuge-71478.herokuapp.com/">
+                                <img src="Assets/img/books.jpg" width="100%" height="115px" class="img-style">
+                                    <div class="overlay px-0">
+                                        <div class="text">Buy-The-Book!</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>                            
+                        <section class="row justify-content-center">
+                            <div class="col contain about-portfolio bounce-right mb-2 px-0">
                                 <a href="https://jkthomps21.github.io/Local-News-App/">
-                                    
-                                    <img src="Assets/news.jpg" alt="Local News App" title="" height="150px" width="100%"/>
-                                    
-                                    <div class="overlay">
+                                <img src="Assets/img/news.jpg" width="100%" height="115px" class="img-style">
+                                    <div class="overlay px-0">
                                         <div class="text">Local News App</div>
                                     </div>
-
                                 </a>
-
                             </div>
                         </section>
                         <section class="row justify-content-center">
-                            <div class="col-12 mb-4 mx-auto text-center contain">
-
+                            <div class="col contain about-portfolio bounce-left mb-2 px-0">
+                                <a href="https://nameless-hollows-54923.herokuapp.com/">
+                                <img src="Assets/img/burgers.jpg" width="100%" height="115px" class="img-style">
+                                    <div class="overlay px-0">
+                                        <div class="text">Eat-Da-Burger!</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                        <section class="row justify-content-center">
+                            <div class="col contain about-portfolio bounce-right mb-2 px-0">
                                 <a href="https://jkthomps21.github.io/weatherDashboard/">
-                                    
-                                    <img src="Assets/weather.jpg" alt="Weather Dashboard" title="" height="150px" width="100%"/>
-                                
-                                    <div class="overlay">
+                                <img src="Assets/img/weather.jpg" width="100%" height="115px" class="img-style">
+                                    <div class="overlay px-0">
                                         <div class="text">Weather Dashboard</div>
                                     </div>
-
                                 </a>
-                            
                             </div>
                         </section>
                         <section class="row justify-content-center">
-                            <div class="col-12 mb-4 mx-auto text-center contain">
-
+                            <div class="col contain about-portfolio bounce-left mb-2 px-0">
+                                <a href="https://jkthomps21.github.io/workDayScheduler/">
+                                <img src="Assets/img/schedules.jpg" width="100%" height="115px" class="img-style">
+                                    <div class="overlay px-0">
+                                        <div class="text">Workday Scheduler</div>
+                                    </div>
+                                </a>
+                            </div>
+                        </section>
+                        <section class="row justify-content-center">
+                            <div class="col contain about-portfolio bounce-right mb-2 px-0">
                                 <a href="https://jkthomps21.github.io/codingQuiz/">
-                                    
-                                    <img src="Assets/quiz.jpg" alt="Coding Quiz" title="" height="150px" width="100%"/>
-                                
-                                    <div class="overlay">
+                                <img src="Assets/img/quiz.jpg" width="100%" height="115px" class="img-style">
+                                    <div class="overlay px-0">
                                         <div class="text">Coding Quiz</div>
                                     </div>
-                                
                                 </a>
-                
                             </div>
-                        </section>  
-                    </section>
-                </div>
-            </section>
+                        </section>
+                    </div>
+                </section>
+            <br><br>
+        </main>
+
+        <!-- Contact Page -->
+        <main id="contact-page" class="container">
+            <br><br>
+                <section class="row justify-content-center">
+                    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-5 about bounce-right mb-5">
+                        <section class="row mt-3">
+                            <div class="col-lg-12">
+                                <span class="h1">Contact</span>
+                            </div>
+                        </section>
+                        <section class="row">
+                            <div class="w-100 mx-1"><hr></div>
+                        </section>
+                        <section class="container">
+                            <form role="form">
+                                <div class="row form-group">
+                                    <label for="formGroupExampleInput">Name</label>
+                                    <input type="email" class="form-control" placeholder="John Smith">
+                                </div>
+                                <div class="row form-group">
+                                    <label for="formGroupExampleInput2">Email</label>
+                                    <input type="email" class="form-control" placeholder="example@gmail.com">
+                                </div>
+                                <div class="row form-group">
+                                    <label for="exampleFormControlTextarea1">Message</label>
+                                    <textarea class="form-control" rows="4"></textarea>
+                                </div>
+                                <button type="submit" class="btn button-color mb-3">Submit</button>
+                            </form>
+                        </section>
+                    </div>
+                </section>
+            <br><br>
         </main>
         
-        
-        <footer class="page-footer font-small fixed-bottom">
+        <!-- Footer -->
+        <footer class="page-footer font-small">
             <div id="footer-line" class="footer-line py-1"></div>
             <div class="footer-copyright text-center py-3">
-                <span class="footer-copyright text-center py-3 mr-3">© Copyright</span>
                 <!--Still need to create a linkedin-->
-                <a target="_blank" href="#" class="footer-icon"><i class="fab fa-linkedin-in mr-2" style="color: white;"></i></a>
-                <a target="_blank" href="https://github.com/jkthomps21/" class="footer-icon mr-2"><i class="fab fa-github" style="color: white;"></i></a>
-                <a target="_blank" href="https://www.instagram.com/jkthomps21/" class="footer-icon"><i class="fab fa-instagram" style="color: white;"></i></a>
+                <span class="justify-content-center">
+                    <a target="_blank" href="#" class="footer-icon"><i class="fab fa-linkedin-in fa-lg mr-2" style="color: white;"></i></a>
+                    <a target="_blank" href="https://github.com/jkthomps21/" class="footer-icon mr-2"><i class="fab fa-github fa-lg" style="color: white;"></i></a>
+                    <a target="_blank" href="https://www.instagram.com/jkthomps21/" class="footer-icon"><i class="fab fa-instagram fa-lg" style="color: white;"></i></a>
+                </span>
             </div>
         </footer>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>    
-    
-    
+    <!-- Scripts -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="Assets/js/portfolio.js"></script>
+
     </body>
 </html>
